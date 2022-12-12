@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Employee>
+	<ID>D0023</ID>
+	<Name>Tom Brady</Name>
+	<PhoneNumber>7782930503</PhoneNumber>
+	<Address>2345 Bilt Rd Vancouver, BC V7E 1Z1</Address>
+</Employee>

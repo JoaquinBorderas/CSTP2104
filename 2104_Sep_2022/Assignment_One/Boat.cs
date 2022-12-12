@@ -4,31 +4,36 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _2104_Sep_2022
+namespace _2104_Sep_2022.Assignment_One
 {
-    public class Car
+    public class Boat
     {
-        public Car(string make, string model, int year, int km, string status, string trim, string bodyType, string engine, int cylinder, string transmission, string drivetrain, string stockNumber, string exteriorColour, int door, string fuelType, string cityFuel, string hwyFuel)
+        public Boat(string make, string model, int year, string status, double hp, string type, string engine, int num_engine, int hours, double length, string drivetrain, string stockNumber, string exteriorColour, string fuelType)
         {
             Make = make;
             Model = model;
             Year = year;
-            Km = km;
+
             Status = status;
-            Trim = trim;
-            BodyType = bodyType;
+            Hp = hp;
+            Type_boat = type;
             Engine = engine;
-            Cylinder = cylinder;
-            Transmission = transmission;
+            NumberEngine = num_engine;
+
+            Hours = hours;
+            Length = length;
             Drivetrain = drivetrain;
             StockNumber = stockNumber;
             ExteriorColour = exteriorColour;
-            Door = door;
+
             FuelType = fuelType;
-            CityFuel = cityFuel;
-            HwyFuel = hwyFuel;
+
         }
-    
+        public string Type_boat { get; set; }
+        public int NumberEngine { get; set; }
+        public int Hours { get; set; }
+        public double Hp { get; set; }
+        public double Length { get; set; }
         public string Make { get; set; }
         public string Model { get; set; }
         public int Year { get; set; }
@@ -46,6 +51,7 @@ namespace _2104_Sep_2022
         public string FuelType { get; set; }
         public string CityFuel { get; set; }
         public string HwyFuel { get; set; }
+
 
     }
 }
