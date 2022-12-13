@@ -1,0 +1,164 @@
+Final Exam 2104 
+
+1. delegate bool A_Delegate(string x, string y)
+
+2. public void AreEqual(string x, string y)
+{ if (String.Equals(x,y))
+	{
+	return true
+	}
+else
+{ 
+return false;
+}
+}
+A_Delegate delegate_ex = AreEqual;
+var solution = delegate_ex("Hello, "Hello");
+
+
+3. Grid Panel, StackPanel and Relative Panel.
+	<StackPanel>
+		<Rectangle Width="20" Height="20"/>
+	</StackPanel>
+
+	<Grid>
+		<Rectangle Width="20" Height="20"/>
+	</Grid>
+
+	<RelativePanel>
+		<Rectangle name="rect" Width="20" Height="20"/>
+	</RelativePanel>
+
+4.	<Grid>
+	<Grid.RowDefinitions>
+		<RowDefinition Height ="*"/>
+		<RowDefinition Height ="*"/>
+		<RowDefinition Height ="*"/>
+	</Grid.RowDefinitions>
+		
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition Width ="*"/>
+		<ColumnDefinition Width ="40"/>
+		<ColumnDefinition Width ="*"/>
+	</Grid.ColumnDefinitions>
+	<TextBlock Grid.Row="2"></TextBlock>
+	<ListView Grid.Column="2" Grid.Row="2"></ListView>
+	</Grid>
+
+5. B) False
+
+6. c) A struct data variable cannot inherit from another struct.
+
+7. c) If a member variable is declared as protected, it can be accessed throughout the namespace.
+
+8. A) Method Overloading
+
+9. C) Virtual
+
+10. C) Private
+
+11. A) True
+
+12. C) A compile-time error is raised.
+
+13. public class Encapsulator
+{
+	ICollection<int> example_list = new List<int>();
+	public void Boundaries(int lowerboundry, int upperboundry){
+	foreach (i in example_list)
+	{
+		if (i < lowerboundry  || i > upperboundry)
+		{
+			example_list.Remove(i)
+		}
+	var count = i++;
+	}
+	var average = count / example_list.Length()
+	return average;
+	}
+	public void Range(int lowerrange, int upperrange)
+	{
+	for each(i in example_list)
+	{
+		if (i > lowerrange && i < upperrange)
+		{
+			example_List.Add(i)
+		}
+	}
+	return example_List;
+	}
+}
+}
+14. public class Student 
+{
+	public Student(string StudentID, string StudentName, string EmailAddress, string PhoneNumber, string Address, string City, string Country, string PostalCode, int RegistrationYear)
+	{	
+		if (StudentID || StudentName || EmailAddress || RegistrationYear == null)
+		{
+			throw new SystemArgumentException;
+		}
+		foreach (string i in EmailAddress)
+		{
+		username = EmailAddress.Split("@");
+		domainname = EmailAddress.Split(".");
+		
+		}
+		if (username == null)
+		{
+			throw new SystemArgumentException("No username");
+		}
+		if (domainname == null)
+		{
+			throw new SystemArgumentException("No domain name");
+		}
+		
+		if (username.StartsWith("-"))
+		{
+		throw new SystemArgumentException("Invalid Char in Username");
+		}
+		if domainname.EndsWith("-")
+		{
+		throw new SystemArgumentException("Invalid Char in Domain");
+		}
+		foreach (char i in extension)
+		{
+			if (i == "-")
+			{
+				throw new SystemArgumentException("Invalid Char in Extension") 
+			}
+		}
+			
+	
+
+		studentid = StudentID;
+		studentname = StudentName;
+		email = EmailAddress;
+		phonenum = PhoneNumber;
+		address = Address;
+		city = City;
+		country = Country;
+		postalcode = PostalCode;
+		regyear = RegistrationYear;	
+	}
+	public string studentid {get; set;}
+	public string studentname {get; set;}
+	public string email {get; set;}
+	public string phonenum {get; set;}
+	public string address {get; set;}
+	public string city {get; set;}
+	public string country {get; set;}
+	public string postalcode {get; set;}
+	public int regyear {get; set;}
+
+var user_1 = new Student("0001","Brandon","Brock","brandon.brock_samuel@skate-rollers.net","783-233-3223","310 Alwa St","Vancouver","Canada","V1ZJ34",2018);
+var user_2 = new Student("0002","Rad","Brad","z-aa@bbb.cccc","723-663-5324","953 Orwell St","Vancouver","Canada","V4K 2T5",2020);
+var user_3 = new Student("0003","Joe","Ked","1es@awesome-code.net","778-123-2342","3645 Vandusen St","Vancouver","Canada","V4L 2Q5",2015);
+var user_4 = new Student("0004","Karen","Lee","aa@ffg.gg-bb","778-123-2342","3645 Vandusen St","Vancouver","Canada","V4L 2Q5",2015);
+var user_5 = new Student("0005","Troy","Marshall","-a@sos.com","778-123-2342","3645 Vandusen St","Vancouver","Canada","V4L 2Q5",2015);
+var user_6 = new Student("0006","Getz","Justin","actas1@sos-.com","778-123-2342","3645 Vandusen St","Vancouver","Canada","V4L 2Q5",2015);
+
+//Error Line 4: "Invalid Char in Extension"
+//Error Line 5: "Invalid Char in Username"
+//Error Line 6: "Invalid Char in Domain"
+}
+}
